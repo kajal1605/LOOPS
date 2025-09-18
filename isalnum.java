@@ -17,5 +17,4 @@ public class isalnum {
         System.out.println("result: "+solve(A));
     }
     
-    
 }
