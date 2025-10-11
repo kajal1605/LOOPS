@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class is_x_present {
@@ -11,13 +12,15 @@ public class is_x_present {
         }
         System.out.println("enter the x number:");
         int x = s.nextInt();
-        boolean found = false;
-        for(int i=0;i<n;i++){
-            if(a[i] == x){
-                found = true;
-                break; // no need to check further
-            }
-        }
+        // boolean found = false;
+        // for(int i=0;i<n;i++){
+        //     if(a[i] == x){
+        //         found = true;
+        //         break; // no need to check further
+        //     }
+        // }
+
+        boolean found = Arrays.stream(a).anyMatch(num -> num == x);
 
         if(found){
             System.out.println("X is present");
