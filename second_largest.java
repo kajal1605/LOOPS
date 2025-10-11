@@ -37,7 +37,7 @@ public class second_largest {
             System.out.print("there is no distinct element");
         }
         else{
-            System.err.println("Second largest:"+second);
+            System.out.println("Second largest:"+second);
         }
     }
     }
