@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
-public class secondary_diagonal {
-
+public class largest_2d {
     public static void main(String[] args) {
         // to take the input from the system
         Scanner s = new Scanner(System.in);
@@ -22,11 +21,15 @@ public class secondary_diagonal {
         }
 
         //output
-        System.out.print("secondary diagonal:");
+        System.out.print("Largest element in 2D array:");
+        int max = Integer.MIN_VALUE;
         for(int i=0;i<rows;i++){
-            
-                System.out.print(a[i][cols-1-i]+" ");
+            for(int j=0;j<cols;j++){
+                if(max<a[i][j]){
+                    max = a[i][j];
             }
         }
-            
-        }
+    }
+    System.out.print(max);
+    }
+}
